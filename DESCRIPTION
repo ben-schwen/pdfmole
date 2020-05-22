@@ -2,17 +2,10 @@ Package: pdfmole
 Type: Package
 Title: Read Tables from 'PDF'-Files
 Version: 1.0
-Authors@R: c(person("Ronald", "Hochreiter", role = "ctb"),
-             person("Florian", "Schwendinger", role = c("aut", "cre"), email = "FlorianSchwendinger@gmx.at"),
-             person("Benjamin", "Schwendinger", role = "aut"))
-Description: Provides an interface to 'PDFMiner'
-    <https://github.com/pdfminer/pdfminer.six> 
-    a 'Python' package for extracting information from
-    'PDF'-files. 'PDFMiner' has the goal to get all information available in the 
-    'PDF'-file, position of the characters, font type, font size, informations about
-    lines. Which makes it the perfect starting point for extracting tables from 
-    'PDF'-files.
-Imports: PythonInR, checkmate
-Suggests: miniUI, shiny
-License: GPL-3
+Authors@R: c(person("Florian", "Schwendinger", role = c("aut", "cre"), email = "FlorianSchwendinger@gmx.at"),
+             person("Benjamin", "Schwendinger", role = "aut", email = "benjamin.schwendinger@hotmail.com"))
+Description: A package for refining the output of 'pdfminer'
+      <https://github.com/FlorianSchwendinger/pdfminer>. Transforms the output into a (useful) data.frame format for further data analysis.
+Imports: pdfminer
+License: MIT
 RoxygenNote: 6.1.1
